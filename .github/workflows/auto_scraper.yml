@@ -5,7 +5,9 @@ on:
     - cron: '0 9 * * *'  # Automatically runs every single day at 9:00 AM IST
   push:
     branches: [ main ]  # Also triggers instantly right now when you push it
-
+  
+  workflow_dispatch:
+    
 jobs:
   run-and-commit:
     runs-on: ubuntu-latest
